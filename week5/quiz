@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1></h1>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="row-cols-lg-auto">
+          <nav class="navbar bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand">LAZADUNG</a>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="alert alert-warning" role="alert">
+          ตั้งแต่วันที่ 1 ธ.ค. ถึง 31 ธ.ค. 66 !
+        </div>
+      </div>
+
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">หน้าหลัก</a></li>
+          <li class="breadcrumb-item"><a href="#">สินค้าอื่นๆ</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            หมวดหมู่สินค้า
+          </li>
+        </ol>
+      </nav>
+
+      <!--1st row-->
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="row">
+            <div
+              id="carouselExampleIndicators"
+              class="carousel slide"
+              data-bs-ride="true"
+            >
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="1"
+                  aria-label="Slide 2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide-to="2"
+                  aria-label="Slide 3"
+                ></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://www.motocrossmag.co.th/main/wp-content/uploads/2021/11/klx150-green-01.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://www.checkraka.com/uploaded/top10/af/afa91e702cb2382f1c74839ce6e4f22d.jpg"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://lh4.googleusercontent.com/bXCe0YMaTEVomL4Z5Zg1Bcc40InjLjdNLBBORzCYW66FQnkxgR0pF7bbNgTKlEePwF5En40SJZY8X63_SjIgHt0L54rTOohKJ-DqrxxGTHu86JLBn_Dx_VrrsM4nE_NoVQx6OyUNQw1CNWIryFzkUF-zcF9Y35EA2YooqevP_zTF7KaNKDrvKnIrcsm8xDjokdE-iud_yA"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="row">
+            <h2>Motor cross<span class="badge bg-secondary">ใหม่</span></h2>
+          </div>
+          <h2>
+            บีเอ็มดับเบิลยู BMW F 700 GS ปี 2013<span
+              class="badge bg-secondary"
+            ></span>
+          </h2>
+          <div class="modal" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal title</h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>Modal body text goes here.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    ยกเลิก
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    ซื้อสินค้าเรียบร้อย
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn btn-warning btn-sm">BUY NOW</button>
+        </div>
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-lg-6">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  บีเอ็มดับเบิลยู BMW F 700 GS ปี 2013
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  บีเอ็มดับเบิลยู BMW F 700 GS ปี 2013<code
+                    >super motoer cross</code
+                  >, BMW F 700 GS
+                  ตอบสนองกลุ่มลูกค้าที่ต้องการความปราดเปรียวในการขับ Off-Road
+                  เป็นพิเศษ เครื่องยนต์ 2 สูบ, 4 วาล์ว/สูบ 75 แรงม้า ที่ 7,300
+                  รอบ/นาที แรงบิด 77 นิวตัน ที่ 5,300 รอบ/นาที
+                  ด้วยตัวถังน้ำหนักเบาและระบบช่วงล่างที่ถูกออกแบบมาเป็นพิเศษเพื่อรองรับการขับขี่แบบ
+                  Enduro.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://static.thairath.co.th/media/PZnhTOtr5D3rd9ocKlgi76mBOnf51hLD3gUIy2uaj5YlCCD.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                ซื้อในช่วงส่งท้ายปีรับส่วนลด 10,000 บาท พร้อมอุปกรณ์แต่งครบชุด
+                สนใจรับส่วนลด
+              </p>
+              <a href="#" class="btn btn-primary">กดเลย</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
