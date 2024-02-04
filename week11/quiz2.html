@@ -1,0 +1,24 @@
+<body>
+  <button onclick="getMovies();">Load Movies</button>
+  <div id="content"></div>
+  <script>
+    async function getMovies() {
+      //basic function style
+      try {
+        let promise = await fetch("https://raw.githubusercontent.com/arc6828/SCS211/main/week13/staff.json");
+        let movies_object = await promise.json();
+        console.log("success:", movies_object);
+        let people = movies_object.people;
+        let contentDiv = document.querySelector("#content");
+        for(let item of people){
+            console.log(item);
+            let newDiv = document.createElement("div");
+            newDiv.innerHTML = item.name; + " | " + item.releaseYear;
+            contentDiv.appendChild(newDiv);
+        }      
+      } catch (error) {
+        console.log("fail", error);
+      }
+    }
+  </script>
+</body>
